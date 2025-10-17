@@ -2,6 +2,8 @@
 
 A responsive and stylish Profile Card built with HTML and CSS, featuring a dark theme with neon green highlights. The card displays a user’s profile image, bio, hobbies, dislikes, and social links — all wrapped in a modern design that adapts beautifully across all devices.
 
+preview: https://hng-profile-cardd.netlify.app/
+
 🚀 Features
 
 💡 Dark theme with neon green accents
