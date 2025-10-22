@@ -15,13 +15,25 @@
   </head>
   <body class="flex">
     <article data-testid="test-profile-card">
-      <figure>
-        <img
-          data-testid="test-user-avatar"
-          src="./public/profile img.jpg"
-          alt="Profile picture of John Doe"
-        />
-      </figure>
+      <div>
+        <figure>
+          <img
+            data-testid="test-user-avatar"
+            src="./public/profile img.jpg"
+            alt="Profile picture of John Doe"
+          />
+        </figure>
+        <nav>
+          <ul class="about-me-nav">
+            <li>
+              <a href="about.html">About me</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Page</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="profile-details">
         <h2 data-testid="test-user-name">Joe Lani</h2>
