@@ -26,7 +26,7 @@
       <!-- <div id="error">
         <p id="alert-text"></p>
       </div> -->
-      <form action="/" method="get" id="myForm" class="contact-form">
+      <form id="myForm" class="contact-form">
         <div class="name-email-group">
           <div class="form-control" data-testid="test-contact-name">
             <label for="full-name">Full Name</label>
@@ -121,14 +121,16 @@
         e.preventDefault();
         const isValid = checkInputs();
 
-        if (isValid) {
-          const successMsg = document.getElementById("success-message");
-          successMsg.style.display = "block";
-
-          setTimeout(() => {
-            window.location.href = "about.html";
-          }, 2000); // 2 seconds
+        if (!isValid) {
+          return;
         }
+
+        const successMsg = document.getElementById("success-message");
+        successMsg.style.display = "block";
+
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 2000);
       });
 
       function checkInputs() {
@@ -172,6 +174,7 @@
           isValid = false;
         } else if (messageValue.length < 10) {
           setErrorFor(message, "Message must be at least 10 characters");
+          isValid = false;
         } else {
           setSuccessFor(message);
         }
